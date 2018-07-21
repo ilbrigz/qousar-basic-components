@@ -21,7 +21,7 @@ module.exports = function (ctx) {
       scopeHoisting: true,
       vueRouterMode: 'history',
       distDir: 'docs',
-      publicPath:'qousar_basic_components',
+      publicPath:'qousar-basic-components',
       // vueCompiler: true,
       // gzip: true,
       // analyze: true,
