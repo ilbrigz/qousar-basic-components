@@ -1,8 +1,25 @@
 <template>
 	<div>
 	<q-page padding>
+		<q-toolbar color="primary">
+  <!--
+    For Toolbar title, we use
+    QToolbarTitle component
+  -->
+  <q-toolbar-title>
+    Title
+  </q-toolbar-title>
+
+  <!--
+    In a Toolbar, buttons are best
+    configured as "flat, round, dense" and with an icon,
+    but any button will do
+  -->
+  <q-btn flat round dense icon="mail" />
+</q-toolbar>
+
 	<h2>Cards</h2>
-	
+
 <q-btn
   loading
   color="primary"
@@ -17,7 +34,6 @@
   label="Button Label"
   light-percentage
 />
-	
 		<q-card color="secondary">
 			<q-card-title class="text-center">	<h4 class="text-weight-bold">Typography</h4>
 				<p>change the font style in the global css</p>

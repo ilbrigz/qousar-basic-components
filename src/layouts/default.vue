@@ -33,26 +33,8 @@
         inset-delimiter
       >
         <q-list-header>Essential Links</q-list-header>
-        <q-item to="/cards">
-        
-          <q-item-side icon="school" />
-          <q-item-main label="Docs" sublabel="cards" />
-        </q-item>
-        <q-item to="buttons">
-          <q-item-side icon="code" />
-          <q-item-main label="GitHub" sublabel="buttons" />
-        </q-item>
-        <q-item @click.native="openURL('https://discord.gg/5TDhbDg')">
-          <q-item-side icon="chat" />
-          <q-item-main label="Discord Chat Channel" sublabel="https://discord.gg/5TDhbDg" />
-        </q-item>
-        <q-item @click.native="openURL('http://forum.quasar-framework.org')">
-          <q-item-side icon="record_voice_over" />
-          <q-item-main label="Forum" sublabel="forum.quasar-framework.org" />
-        </q-item>
-        <q-item @click.native="openURL('https://twitter.com/quasarframework')">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Twitter" sublabel="@quasarframework" />
+        <q-item v-for="menu in sidemenus" :to="'/'+menu" :key="menu">
+          <q-item-main :label="menu" />
         </q-item>
       </q-list>
     </q-layout-drawer>
@@ -70,7 +52,9 @@ export default {
   name: 'LayoutDefault',
   data () {
     return {
-      leftDrawerOpen: this.$q.platform.is.desktop
+      leftDrawerOpen: this.$q.platform.is.desktop,
+      sidemenus: ['main','animation', 'buttons', 'cards', 'groupings', 'medias', 'navigations','popups', 'progress','scrolling', 'tabs', 'touch', 'webapi'],
+      test:[{name:'asdf'},{name:'djkj'}]
     }
   },
   methods: {
