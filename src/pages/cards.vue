@@ -3,6 +3,21 @@
 	<q-page padding>
 	<h2>Cards</h2>
 	
+<q-btn
+  loading
+  color="primary"
+:percentage="59"
+  label="Button Label"
+  light-percentage
+/>
+	<q-btn
+  loading
+  color="primary"
+:percentage="59"
+  label="Button Label"
+  light-percentage
+/>
+	
 		<q-card color="secondary">
 			<q-card-title class="text-center">	<h4 class="text-weight-bold">Typography</h4>
 				<p>change the font style in the global css</p>
