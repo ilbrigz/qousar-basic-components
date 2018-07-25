@@ -19,21 +19,6 @@
 </q-toolbar>
 
 	<h2>Cards</h2>
-
-<q-btn
-  loading
-  color="primary"
-:percentage="59"
-  label="Button Label"
-  light-percentage
-/>
-	<q-btn
-  loading
-  color="primary"
-:percentage="59"
-  label="Button Label"
-  light-percentage
-/>
 		<q-card color="secondary">
 			<q-card-title class="text-center">	<h4 class="text-weight-bold">Typography</h4>
 				<p>change the font style in the global css</p>
@@ -491,6 +476,13 @@
 </q-card>
 
 	
+
+  <q-collapsible popup icon="mail" label="Inbox" sublabel="5 unread emails">
+  <div>...content...</div>
+</q-collapsible>
+<q-collapsible popup icon="send" label="Outbox" sublabel="Empty">
+  <div>...content...</div>
+</q-collapsible>
 </q-page>
 </div>
 </template>

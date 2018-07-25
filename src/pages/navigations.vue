@@ -1,5 +1,9 @@
 <template>
-<h1>navigations</h1>
+<q-page>
+	<h3>tabs</h3>
+
+
+</q-page>
 </template>
 
 <script>
